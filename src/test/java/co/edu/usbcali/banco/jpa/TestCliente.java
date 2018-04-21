@@ -93,7 +93,7 @@ class TestCliente {
 	@Test
 	@DisplayName("ConsultarClientePorId")
 	void btest() {
-		assertNotNull(entityManager, "El entitymanager is nulo");
+		assertNotNull(entityManager, "El entitymanager es nulo");
 		Cliente cliente=entityManager.find(Cliente.class, clieId);
 		assertNotNull(cliente, "El cliente ya existe");
 		
