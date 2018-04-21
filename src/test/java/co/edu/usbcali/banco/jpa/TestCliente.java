@@ -35,7 +35,7 @@ class TestCliente {
 	@DisplayName("ConsultarCliente")
 	void etest() {
 		
-		assertNotNull(entityManager, "El entitymanager es nulo");
+		assertNotNull(entityManager, "El entitymanager is nulo");
 		
 		String jpql="SELECT cli FROM Cliente cli";
 		
@@ -93,7 +93,7 @@ class TestCliente {
 	@Test
 	@DisplayName("ConsultarClientePorId")
 	void btest() {
-		assertNotNull(entityManager, "El entitymanager is null");
+		assertNotNull(entityManager, "El entitymanager is nulo");
 		Cliente cliente=entityManager.find(Cliente.class, clieId);
 		assertNotNull(cliente, "El cliente ya existe");
 		
