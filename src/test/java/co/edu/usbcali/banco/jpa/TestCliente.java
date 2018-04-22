@@ -35,7 +35,7 @@ class TestCliente {
 	@DisplayName("ConsultarCliente")
 	void etest() {
 		
-		assertNotNull(entityManager, "El entitymanager is nulo");
+		assertNotNull(entityManager, "El entitymanager es nulo");
 		
 		String jpql="SELECT cli FROM Cliente cli";
 		
