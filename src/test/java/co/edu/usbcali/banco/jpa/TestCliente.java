@@ -42,7 +42,7 @@ class TestCliente {
 		List<Cliente> losClientes= entityManager.createQuery(jpql).getResultList();
 		
 		losClientes.forEach(cliente->{
-			log.info("NUM-ID:"+cliente.getClieId());
+			log.info("ID-NUMERO:"+cliente.getClieId());
 			log.info("NOMBRE:"+cliente.getNombre());
 		});
 		
