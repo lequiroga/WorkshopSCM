@@ -36,7 +36,7 @@ class TestUsuario {
 	@DisplayName("ConsultarUsuario")
 	void etest() {
 		
-		assertNotNull(entityManager, "El entitymanager es nulo");
+		assertNotNull(entityManager, "El entitymanager is null");
 		
 		String jpql="SELECT usu FROM Usuario usu";
 		
