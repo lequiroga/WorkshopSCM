@@ -35,15 +35,15 @@ class TestCliente {
 	@DisplayName("ConsultarCliente")
 	void etest() {
 		
-		assertNotNull(entityManager, "El entitymanager es nulo");
+		assertNotNull(entityManager, "El entitymanager is null");
 		
 		String jpql="SELECT cli FROM Cliente cli";
 		
 		List<Cliente> losClientes= entityManager.createQuery(jpql).getResultList();
 		
 		losClientes.forEach(cliente->{
-			log.info("ID-NUMERO:"+cliente.getClieId());
-			log.info("NOMBRE:"+cliente.getNombre());
+			log.info("ID:"+cliente.getClieId());
+			log.info("NAME:"+cliente.getNombre());
 		});
 		
 		/*
